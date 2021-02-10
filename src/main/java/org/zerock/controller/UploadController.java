@@ -264,7 +264,8 @@ public class UploadController {
 		}
 		
 		String resourceName = resource.getFilename();
-
+		
+		//remove UUID
 		String resourceOriginalName = resourceName.substring(resourceName.indexOf("_")+1);
 		
 		HttpHeaders headers = new HttpHeaders();
